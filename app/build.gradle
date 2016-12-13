@@ -9,12 +9,20 @@ android {
         minSdkVersion 7
         targetSdkVersion 19
     }
-
+    signingConfigs {
+        release {
+            storeFile file("ht5tc.keystore")
+            storePassword "<PASSWORD>"
+            keyAlias "ht5tc"
+            keyPassword "<PASSWORD>"
+        }
+    }
     buildTypes {
         release {
             lintOptions {
                 disable 'MissingTranslation'
             }
+					  signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
