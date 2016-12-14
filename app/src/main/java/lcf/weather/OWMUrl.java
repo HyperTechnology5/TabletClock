@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.Locale;
 
 abstract class OWMUrl {
-	private static final String OWM_APIKEY = "1bb5226ac7cc4c180f487affc89eb7a7";
+	private static final String OWM_APIKEY = "<OWM_API_KEY>";
 	private static final String WEATHER_ICON_URL = "http://openweathermap.org/img/w/%s.png";
 	private static final String WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather?mode=xml&units=metric&lang=%s&id=%d&APPID=" + OWM_APIKEY;
 	private static final String WEATHER_DAYLY_FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?mode=xml&cnt=%d&units=metric&lang=%s&id=%d&APPID=" + OWM_APIKEY;
