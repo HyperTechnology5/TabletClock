@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android'
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "lcf.clock"
         minSdkVersion 7
-        targetSdkVersion 19
+        targetSdkVersion 23
     }
     signingConfigs {
         release {
@@ -22,7 +22,7 @@ android {
             lintOptions {
                 disable 'MissingTranslation'
             }
-					  signingConfig signingConfigs.release
+	    signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
